@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="12dp">
+
+    <Button
+        android:id="@+id/BACK"
+        android:layout_width="180px"
+        android:layout_height="150px"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="39dp"
+        android:text="↩"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/CURRENT_JOB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CURRENT_JOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Current Job"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="162dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="52dp"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Company"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="City"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="State"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/costofLiving"
+        android:layout_width="164dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Cost Of Living"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state" />
+
+    <TextView
+        android:id="@+id/yearlySalary"
+        android:layout_width="163dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Yearly Salary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costofLiving" />
+
+    <TextView
+        android:id="@+id/yearlyBonus"
+        android:layout_width="163dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Yearly Bonus"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearlySalary" />
+
+    <TextView
+        android:id="@+id/retirementBenefits"
+        android:layout_width="164dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Retirement Benefits"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearlyBonus" />
+
+    <TextView
+        android:id="@+id/relocationStipend"
+        android:layout_width="164dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Relocation Stipend"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retirementBenefits" />
+
+    <TextView
+        android:id="@+id/trainingDevelopmentFund"
+        android:layout_width="165dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Training Development Fund"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relocationStipend" />
+
+    <EditText
+        android:id="@+id/inputTitle"
+        android:layout_width="162dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/jobTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputCompany"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/inputTitle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/inputCity"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/inputCompany" />
+
+    <AutoCompleteTextView
+        android:id="@+id/inputState"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/state"
+        app:layout_constraintTop_toBottomOf="@+id/inputCity" />
+
+    <EditText
+        android:id="@+id/inputCostOfLiving"
+        android:layout_width="164dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/costofLiving"
+        app:layout_constraintTop_toBottomOf="@+id/inputState" />
+
+    <EditText
+        android:id="@+id/inputSalary"
+        android:layout_width="163dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/yearlySalary"
+        app:layout_constraintTop_toBottomOf="@+id/inputCostOfLiving" />
+
+    <EditText
+        android:id="@+id/inputBonus"
+        android:layout_width="163dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/retirementBenefits"
+        app:layout_constraintTop_toBottomOf="@+id/inputSalary" />
+
+    <EditText
+        android:id="@+id/inputBenefits"
+        android:layout_width="164dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/retirementBenefits"
+        app:layout_constraintTop_toBottomOf="@+id/inputBonus" />
+
+    <EditText
+        android:id="@+id/inputStipend"
+        android:layout_width="164dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/relocationStipend"
+        app:layout_constraintTop_toBottomOf="@+id/inputBenefits" />
+
+    <EditText
+        android:id="@+id/inputFund"
+        android:layout_width="165dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:digits="0123456789"
+        android:maxLength="5"
+        app:layout_constraintStart_toEndOf="@+id/trainingDevelopmentFund"
+        app:layout_constraintTop_toBottomOf="@+id/inputStipend" />
+
+    <Button
+        android:id="@+id/compareWithCurrentJob"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="6dp"
+        android:background="#130f40"
+        android:text="Compare with Current Job"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="#e74c3c"
+        android:text="Save"
+        android:textColor="#ecf0f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveCompareJob"
+        android:layout_width="118dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="32dp"
+        android:background="#e74c3c"
+        android:text="Save and Compare"
+        android:textColor="#ecf0f1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/editJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="#e74c3c"
+        android:text="Edit"
+        android:textColor="#ecf0f1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelJob"
+        app:layout_constraintStart_toEndOf="@+id/saveJob" />
+
+    <Button
+        android:id="@+id/cancelJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="#e74c3c"
+        android:text="Cancel"
+        android:textColor="#ecf0f1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="#e74c3c"
+        android:text="Delete"
+        android:textColor="#ecf0f1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelJob"
+        app:layout_constraintStart_toEndOf="@+id/saveJob" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

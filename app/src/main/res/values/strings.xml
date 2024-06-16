@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">JobCompare6300</string>
+    <string-array name="CITY">
+        <item>New York City</item>
+        <item>San Francisco</item>
+        <item>Miami</item>
+        <item>Los Angeles</item>
+        <item>Boston</item>
+        <item>WashingtonDC</item>
+        <item>Seattle</item>
+        <item>San Diego</item>
+        <item>Denver</item>
+        <item>Sacramento</item>
+        <item>Portland</item>
+        <item>Dallas</item>
+        <item>Chicago</item>
+        <item>Irvine</item>
+        <item>Atlanta</item>
+        <item>Cupertino</item>
+        <item>Sunnyvale</item>
+        <item>Mountain View</item>
+        <item>Palo Alto</item>
+        <item>San Jose</item>
+    </string-array>
+    <string-array name="STATE">
+        <item>AZ</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>IL</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>NJ</item>
+        <item>NY</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>WA</item>
+    </string-array>
+
+</resources>
